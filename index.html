@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images.png">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="apresentacao">
+        <h1>Conversor de Temperatura</h1>
+        <p>Coneverta a temperatura em que você se encontra para C°, e assim saber em que temperatura celcius você está.</p>
+            
+            
+    </div>
+
+    <header class="area-calc1">
+        <fieldset id="area-input">
+
+            <div class="area-kelvin">        
+                    <label id='kelvin-lbl' for="kelvin-npt">Kelvin para C°: </label> <input id="kelvin-ipt" type="number">
+                    <button type="button" onclick="ConverterK()">Converter</button>
+                    <p id="resK">...</p>                 
+            </div>
+
+            <div class="area-farenheit">
+                <label id="farenheit-lbl" for="farenheit">Farenheit para C°: </label> <input id="farenheit-ipt" type="number" value="">
+                <button type="button" onclick="ConverterF()">Converter</button>
+                <p id="resF">...</p>
+            </div>
+
+            <div class="imagens">          
+                <img id="temp" src="./img/ambiente.jpg" alt="Temperatura Ambiente">
+                
+                <img id="temp" src="img/quente.jpg" alt="Temperatura Alta">
+                
+                <img id="temp" src="img/frio.jpg" alt="Temperatura Baixa">                
+            </div>
+
+            <div class="txt">
+                <p id="txt" >Temperatura Ambiente</p>
+                <p id="txt" >Temperatura Alta</p>
+                <p id="txt" >Temperatura Baixa</p>
+            </div>
+        </fieldset>
+        
+    </header>
+
+    <h1>Converções inversas a celcius</h1>
+
+    <header class="area-calc2">
+        <fieldset id="area-input">
+
+            <div class="area-kelvin">        
+                    <label id='cpk-lbl' for="cpk-npt">C° para Kelvin: </label> <input id="cpk-ipt" type="number">
+                    <button type="button" onclick="ConverterCpK()">Converter</button>
+                    <p id="resk">...</p>                 
+            </div>
+
+            <div class="area-farenheit">
+                <label id="cpf-lbl" for="cpf">C° para Farenheit: </label> <input id="cpf-ipt" type="number" value="">
+                <button type="button" onclick="ConverterCpF()">Converter</button>
+                <p id="resf">...</p>
+            </div>
+
+        </fieldset>
+    </header>
+
+    <footer class="rodape">        
+           <p><a id="link" href="https://github.com/CleytonLu" target="_blank">Github</a></p>        
+            <p>Whatsapp: (81) 99592-5762</p>
+            <p>desenvolvido Por Cleyton Lucas</p>
+    </footer>
+
+</body>
+</html>
